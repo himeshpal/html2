@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Download File</title>
     <script>
-      // Redirect immediately as soon as the script is executed
-      window.location.href =
-        "https://drive.google.com/file/d/1U5qOGwFkxF7rLZBRzJTQCaeA-9rujeu8/view";
+      // Redirect immediately on page load
+      window.onload = function () {
+        window.location.href =
+          "https://drive.google.com/file/d/1U5qOGwFkxF7rLZBRzJTQCaeA-9rujeu8/view?usp=sharing";
+      };
     </script>
   </head>
   <body>
     <p>
       Your download should start automatically. If it doesn't,
       <a
-        href="https://drive.google.com/file/d/1U5qOGwFkxF7rLZBRzJTQCaeA-9rujeu8/view"
+        href="https://drive.google.com/file/d/1U5qOGwFkxF7rLZBRzJTQCaeA-9rujeu8/view?usp=sharing"
         >click here</a
       >.
     </p>
